@@ -48,6 +48,8 @@ func passthroughEnv() []string {
 		"NO_PROXY", "no_proxy",
 		"GIT_PROXY_COMMAND",
 		"GIT_HTTP_PROXY_AUTHMETHOD",
+		"SSH_AGENT_LAUNCHER",
+		"SSH_AUTH_SOCK",
 	}
 	var result []string
 	for _, variable := range relevantVariables {
